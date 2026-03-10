@@ -1,0 +1,49 @@
+{
+    "label": "CSV",
+    "name": "csv",
+    "apiVersion": "v1",
+    "internal": false,
+    "configurationType": "GLOBAL",
+    "deployment": {
+        "jsService": true,
+        "profiles":[
+            {
+                "name": "small",
+                "label": "Small",
+                "memory": 128,
+                "description": "Small Memory Allocation"
+            },
+            {
+                "name": "default",
+                "label": "Default",
+                "memory": 256,
+                "description": "Default Memory Allocation"
+            },
+            {
+                "name": "medium",
+                "label": "Medium",
+                "memory": 512,
+                "description": "Medium Memory Allocation"
+            },
+            {
+                "name": "big",
+                "label": "Big",
+                "memory": 1024,
+                "description": "Big Memory Allocation"
+            }
+        ],
+        "allowMultipleInstances": false
+    },
+    "status": "ACTIVE",
+    "stores": [],
+    "events": [],
+    "functions": [
+        {
+            "label": "Merge CSV Files",
+            "name": "merge",
+            "description": "The service receives a list of CSV files and returns a merged CSV file",
+            "callbacks": []
+        }
+    ],
+    "configuration":[]
+}

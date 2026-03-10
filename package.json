@@ -1,0 +1,28 @@
+{
+  "name": "csv-service",
+  "version": "1.0.0",
+  "description": "Slingr Service to handle CSV Files",
+  "main": "appService.js",
+  "scripts": {
+    "start": "node appService.js",
+    "startDev": "nodemon appService.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juanma Espinosa <jmespinosa@slingr.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slingr-stack/csv-service"
+  },
+  "keywords": [
+    "slingr",
+    "csv",
+    "services"
+  ],
+  "dependencies": {
+    "@slingr/slingr-services": "^0.0.8",
+    "csv": "^6.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
